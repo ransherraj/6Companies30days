@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int n;
+    long long int n;
     priority_queue<int> pq;
     for(int i = 0; i<n; i++){
         int temp;
@@ -12,7 +12,7 @@ int main()
         pq.push(temp);
     }
     int count = 0;
-    while(!pq.empty() && count <= 10){
+    while(!pq.empty() && count < 10){
         cout<<pq.top()<<" ";
         pq.pop();
         count++;
